@@ -1,29 +1,25 @@
-# 🎮 CODE QUEST — Pixel Academy
+# 🎮 CODE QUEST  Pixel Academy
 
 ### *Hässelby Coding Coach*
 
 An interactive, gamified Python & JavaScript coding tutor built as a single static HTML file. Designed for middle school students (ages 11-13) on Chromebooks in kiosk mode.
 
-![License](https://img.shields.io/badge/license-MIT-blue)
-![No Dependencies](https://img.shields.io/badge/dependencies-zero-green)
-![Offline Ready](https://img.shields.io/badge/offline-ready-brightgreen)
-
 ---
 
-## ✨ Features
+##  Features
 
-### 🗺️ RPG Quest System
+###  RPG Quest System
 - **11 Python lessons + 9 JavaScript lessons** with sequential unlock progression
 - Story-driven quests with RPG flavor text and character lore
 - Boss fights (FizzBuzz Dragon) as capstone challenges
 - XP, coins, streak tracking, and level progression (1-10)
 
-### 🧩 Standalone Puzzles
+###  Standalone Puzzles
 - 5 coding puzzles (Pyramid Builder, String Reverser, Loot Counter, Champion Finder, Pattern Printer)
-- Open-order — no unlock gating, solve in any sequence
+- Open-order - no unlock gating, solve in any sequence
 - Separate from the main quest path
 
-### 💻 Live Code Editor
+###  Live Code Editor
 - In-browser Python transpiler (converts Python to JS for execution)
 - JavaScript runs natively
 - Tab key support, line numbers, scroll sync
@@ -31,7 +27,7 @@ An interactive, gamified Python & JavaScript coding tutor built as a single stat
 - Infinite loop protection (10,000 iteration guard)
 - Friendly error messages
 
-### 🐍 Python Transpiler Supports
+###  Python Transpiler Supports
 - Variables, math, string operations
 - `if` / `elif` / `else` (proper block tracking)
 - `for` loops with `range()`, `for...in` lists
@@ -46,49 +42,49 @@ An interactive, gamified Python & JavaScript coding tutor built as a single stat
 - Friendly `input()` error message
 
 ### 🇸🇪 Bilingual (English / Swedish)
-- Full i18n — every UI string, lesson, quest description, tutor message, and error message
+- Full i18n - every UI string, lesson, quest description, tutor message, and error message
 - Toggle between EN and SV on the title screen or in the HUD
 - Swedish level titles (Nybörjarkodare → Kodkrigare → Kodlegend)
 
-### 🧙 Pixel Sage Tutor
+###  Pixel Sage Tutor
 - Contextual help for every quest and puzzle
 - Animated reactions: bounces on success 🎉, shakes on error 😰
 - Tier-appropriate emoji (🧙 → ⚔️ → 👑)
 
-### 👤 Character Progression (3 Tiers)
-- **Level 1-2: Apprentice** — basic tunic, brown boots
-- **Level 3-4: Knight** — silver armor, cape
-- **Level 5+: Archmage** — purple glowing robes, gold staff
+###  Character Progression (3 Tiers)
+- **Level 1-2: Apprentice** - basic tunic, brown boots
+- **Level 3-4: Knight** - silver armor, cape
+- **Level 5+: Archmage** - purple glowing robes, gold staff
 - Pixel art avatar updates live in HUD and tutor panel
 - Separate sprites for Python and JavaScript paths
 
-### 🎮 Mini-Game: Code Catcher
-- 30-second timed game — catch falling code snippets, avoid bugs
+###  Mini-Game: Code Catcher
+- 30-second timed game - catch falling code snippets, avoid bugs
 - Appears every 3 completed quests as a reward break
 - Educational post-game breakdown: each caught item gets a one-line explanation
 - Bonus XP (score ÷ 3) and coins awarded
 - Skip button available anytime
 - 22 items with bilingual descriptions
 
-### 🔊 Sound Effects
+###  Sound Effects
 - Web Audio API oscillator beeps (zero external files)
 - Click, success (ascending C-E-G), error (low buzz), level-up fanfare
 - Mini-game catch/miss sounds
 
-### 🎊 Visual Rewards
+###  Visual Rewards
 - Physics-based confetti cannon (80 particles) on quest complete
 - Screen shake on errors
 - Particle burst effects
 - Animated tutor character reactions
 
-### 📖 Interactive Tutorial
+###  Interactive Tutorial
 - 7-step map screen walkthrough
 - 8-step lesson screen walkthrough
 - Spotlight highlighting of each UI element
 - Auto-shows on first visit, re-accessible via ❓ button
 - Fully bilingual
 
-### 🔄 Reset Button
+###  Reset Button
 - Always visible in HUD for kiosk mode
 - Confirmation modal with bilingual warning
 - Wipes all progress, XP, completed quests
@@ -96,7 +92,7 @@ An interactive, gamified Python & JavaScript coding tutor built as a single stat
 
 ---
 
-## 🚀 Deployment
+##  Deployment
 
 ### GitHub Pages (recommended)
 
@@ -117,7 +113,7 @@ Just open `index.html` in any modern browser. No server needed.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 code-quest/
@@ -131,7 +127,7 @@ code-quest/
 
 ---
 
-## 🛠️ Technical Details
+## Technical Details
 
 | Feature | Implementation |
 |---|---|
@@ -142,7 +138,7 @@ code-quest/
 | Confetti | Canvas 2D with 80 particles, gravity simulation, rotation |
 | State persistence | localStorage with in-memory fallback for sandboxed environments |
 | Fonts | Google Fonts (Silkscreen, JetBrains Mono, Nunito) with Courier New fallback |
-| Compatibility | No optional chaining — works on Chrome 75+ |
+| Compatibility | No optional chaining - works on Chrome 75+ |
 
 ### Browser Support
 
@@ -184,20 +180,20 @@ Mirrors the Python path with JS syntax (`console.log`, `let`, `{}` blocks, `func
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome! Some ideas:
 
-- **More lessons** — Add chapters on dictionaries, string methods, nested loops
-- **More puzzles** — Sorting algorithms, pattern matching, simple games
-- **More mini-games** — Typing speed test, code debugging challenge
-- **Accessibility** — Screen reader support, high contrast mode
-- **More languages** — Add Finnish, Arabic, or other locale support
+- **More lessons** - Add chapters on dictionaries, string methods, nested loops
+- **More puzzles** - Sorting algorithms, pattern matching, simple games
+- **More mini-games** - Typing speed test, code debugging challenge
+- **Accessibility** - Screen reader support, high contrast mode
+- **More languages** - Add Finnish, Arabic, or other locale support
 
 ---
 
-## 📄 License
+## License
 
-MIT License — see [LICENSE](LICENSE) file.
+MIT License - see [LICENSE](LICENSE) file.
 
 Built for **Hässelby Coding Coach** 🇸🇪
