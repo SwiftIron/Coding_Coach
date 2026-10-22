@@ -1,0 +1,56 @@
+name: Code Quest tests
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      mutation_sample:
+        description: 'Mutants to plant for mutation testing (0 = skip)'
+        default: '0'
+jobs:
+  content-and-interpreters:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit suite
+        run: node tests/run.js
+      - name: Python answers judged by real CPython
+        run: CQ_ORACLE=cpython node tests/run.js
+  rust-oracle:
+    # Report-only until its first results have been reviewed
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: rustc --version
+      - name: Rust answers judged by real rustc
+        run: CQ_ORACLE=rustc node tests/run.js
+  browser-playthrough:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install playwright==1.56.0
+      - run: python -m playwright install --with-deps chromium
+      - run: python tests/e2e_playthrough.py
+  mutation:
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.mutation_sample != '0'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Plant bugs and check the unit suite catches them
+        run: node tests/mutation.js --sample ${{ github.event.inputs.mutation_sample }} --seed 7
