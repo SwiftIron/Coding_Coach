@@ -1,4 +1,4 @@
-# 🎮 Code Quest — Pixel Academy (v5)
+# 🎮 Code Quest — Pixel Academy (v0.5)
 
 ### *Hässelby Coding Coach*
 
@@ -6,7 +6,7 @@ A gamified Python and Rust tutor for learners of every age — complete beginner
 
 ---
 
-## What's new in v5
+## What's new in v0.5
 
 - **Python + Rust paths** (JavaScript retired), each with its own tutor: Pixel Sage 🧙 for Python, Rusty 🦀 for Rust.
 - **Real interpreters, real error messages.** Both languages are parsed and run by small interpreters written for this project. Students see the same errors the real tools give — `NameError: name 'pritn' is not defined. Did you mean: 'print'?` or `error[E0382]: borrow of moved value` — plus a plain-language explanation in English or Swedish.
