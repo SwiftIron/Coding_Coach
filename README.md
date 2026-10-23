@@ -1,4 +1,4 @@
-# 🎮 Code Quest — Pixel Academy (v0.5)
+# 🎮 Code Quest - Pixel Academy (v0.5)
 
 ### *Hässelby Coding Coach*
 
