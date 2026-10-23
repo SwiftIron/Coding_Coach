@@ -2,14 +2,14 @@
 
 ### *Hässelby Coding Coach*
 
-A gamified Python and Rust tutor for learners of every age — complete beginners and people who already code — built as **one static HTML file** for Chromebooks in kiosk mode. No server, no install, no build step.
+A gamified Python and Rust tutor for learners of every age - complete beginners and people who already code - built as **one static HTML file** for Chromebooks in kiosk mode. No server, no install, no build step.
 
 ---
 
 ## What's new in v0.5
 
 - **Python + Rust paths** (JavaScript retired), each with its own tutor: Pixel Sage 🧙 for Python, Rusty 🦀 for Rust.
-- **Real interpreters, real error messages.** Both languages are parsed and run by small interpreters written for this project. Students see the same errors the real tools give — `NameError: name 'pritn' is not defined. Did you mean: 'print'?` or `error[E0382]: borrow of moved value` — plus a plain-language explanation in English or Swedish.
+- **Real interpreters, real error messages.** Both languages are parsed and run by small interpreters written for this project. Students see the same errors the real tools give - `NameError: name 'pritn' is not defined. Did you mean: 'print'?` or `error[E0382]: borrow of moved value` - plus a plain-language explanation in English or Swedish.
 - **117 activities in 7 formats** (see Curriculum below), every one auto-verified.
 - **Two-player Duel mode** on one keyboard.
 - **Codex** of 19 true history cards, unlocked one per finished chapter.
@@ -26,7 +26,7 @@ Every coding screen and Free play has a **Watch it run** button. It replays the 
 - every variable is shown with its value and type, and changes flash yellow
 - the chain of function calls and the output so far are shown alongside
 
-Players can step forwards and backwards, drag a slider, or press Play. In Rust, a value that has been moved shows as *moved away (line N)* — ownership made visible. A Rust program that doesn't compile shows the compiler error instead, because real Rust never runs such a program.
+Players can step forwards and backwards, drag a slider, or press Play. In Rust, a value that has been moved shows as *moved away (line N)* - ownership made visible. A Rust program that doesn't compile shows the compiler error instead, because real Rust never runs such a program.
 
 ### 💾 Save codes
 Progress is stored in the browser, and some Chromebooks wipe that at logout. Under ⚙ → Save code, players get a short code (18–49 characters, e.g. `3C10-A03V-1854-RBZZ-ZZY0-T32T`) that holds their quests, level, XP, coins, streak, settings and shop items.
@@ -84,28 +84,28 @@ XP and levels (10 titles in English and Swedish), coins, daily streak 🔥, a pi
 
 ## Curriculum
 
-### 🐍 Python — 10 chapters, 58 activities
-1. Hello, Python — `print`, quotes, multiple lines
-2. Inventory — variables, naming rules, changing values
-3. The number forge — `+ - * / // % **`, `round` · *Mystery: the vault code*
-4. Word smithy — f-strings, string methods, slicing, `input()`, `int()`
-5. Crossroads — `if / elif / else`, `and / or / not` · *Mystery: the missing crown*
-6. The grind — `for`, `range`, `while`, `break` · *Boss: FizzBuzz dragon*
-7. Party up — lists, `append`, `len`, `max/min/sum/sorted`, counting pattern
-8. The spellbook — functions, `return`, default parameters
-9. Treasure maps — dictionaries, `.items()`, `.get()` · *Mystery: the museum heist*
-10. Dragon's peak — `random`, a guessing game, `try/except` · *Boss: Caesar cipher*
+### 🐍 Python - 10 chapters, 58 activities
+1. Hello, Python - `print`, quotes, multiple lines
+2. Inventory - variables, naming rules, changing values
+3. The number forge - `+ - * / // % **`, `round` · *Mystery: the vault code*
+4. Word smithy - f-strings, string methods, slicing, `input()`, `int()`
+5. Crossroads - `if / elif / else`, `and / or / not` · *Mystery: the missing crown*
+6. The grind - `for`, `range`, `while`, `break` · *Boss: FizzBuzz dragon*
+7. Party up - lists, `append`, `len`, `max/min/sum/sorted`, counting pattern
+8. The spellbook - functions, `return`, default parameters
+9. Treasure maps - dictionaries, `.items()`, `.get()` · *Mystery: the museum heist*
+10. Dragon's peak - `random`, a guessing game, `try/except` · *Boss: Caesar cipher*
 
-### 🦀 Rust — 9 chapters, 59 activities
-1. Hello, Rustacean — `fn main`, `println!`, macros, semicolons
-2. Let it be — `let`, `mut`, shadowing, `const`
-3. The type forge — `i32` vs `f64`, `bool`, `char`, `u8`, overflow
-4. Crossroads — `if` as an expression, `match`, ranges, `_`
-5. Loop lagoon — `for`, `while`, `loop` with `break` value · *Boss: FizzBuzz kraken*
-6. Function forge — parameter types, return values, the tail-expression semicolon trap
-7. Ownership island — copy vs move, `String` vs `&str`, `clone`, `&`, `&mut`
-8. The crate of collections — `Vec`, `{:?}`, iterators, `map/filter/collect`
-9. The Option oracle — `Option`, `match`, structs, `impl`, reading input, `cmp` · *Mystery: the crab who stole the pearl* · *Boss: the guessing game from The Rust Book*
+### 🦀 Rust - 9 chapters, 59 activities
+1. Hello, Rustacean - `fn main`, `println!`, macros, semicolons
+2. Let it be - `let`, `mut`, shadowing, `const`
+3. The type forge - `i32` vs `f64`, `bool`, `char`, `u8`, overflow
+4. Crossroads - `if` as an expression, `match`, ranges, `_`
+5. Loop lagoon - `for`, `while`, `loop` with `break` value · *Boss: FizzBuzz kraken*
+6. Function forge - parameter types, return values, the tail-expression semicolon trap
+7. Ownership island - copy vs move, `String` vs `&str`, `clone`, `&`, `&mut`
+8. The crate of collections - `Vec`, `{:?}`, iterators, `map/filter/collect`
+9. The Option oracle - `Option`, `match`, structs, `impl`, reading input, `cmp` · *Mystery: the crab who stole the pearl* · *Boss: the guessing game from The Rust Book*
 
 **Estimated time:** roughly 4–6 hours per language for a complete beginner, plus replay time in Duel and Arcade. Experienced coders can test out of familiar chapters in minutes and spend their time on the expert challenges.
 
@@ -234,6 +234,6 @@ code-quest/
 
 ## License
 
-MIT License — see LICENSE.
+MIT License - see LICENSE.
 
 Built for **Hässelby Coding Coach** 🇸🇪
